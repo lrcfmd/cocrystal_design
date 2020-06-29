@@ -4,3 +4,4 @@ rdkit
 ccdc
 torch
 numba
+umap
