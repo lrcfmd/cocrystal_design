@@ -3,3 +3,4 @@ numpy
 rdkit
 ccdc
 torch
+numba

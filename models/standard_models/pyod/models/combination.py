@@ -7,12 +7,12 @@
 from __future__ import division
 from __future__ import print_function
 
-from combo.combo.models.score_comb import aom as combo_aom
-from combo.combo.models.score_comb import moa as combo_moa
-from combo.combo.models.score_comb import average as combo_average
-from combo.combo.models.score_comb import maximization as combo_maximization
-from combo.combo.models.score_comb import majority_vote as combo_majority_vote
-from combo.combo.models.score_comb import median as combo_median
+from .combo.models.score_comb import aom as combo_aom
+from .combo.models.score_comb import moa as combo_moa
+from .combo.models.score_comb import average as combo_average
+from .combo.models.score_comb import maximization as combo_maximization
+from .combo.models.score_comb import majority_vote as combo_majority_vote
+from .combo.models.score_comb import median as combo_median
 
 
 def aom(scores, n_buckets=5, method='static', bootstrap_estimators=False,
