@@ -3,19 +3,14 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset, Subset
 import torch.nn.functional as F
-from modules import SAB, PMA, ISAB
+from src.set_transformer.modules import SAB, PMA, ISAB
 import tqdm
-#torch.cuda.empty_cache() 
-% cd ..
 from base.torchvision_dataset import TorchvisionDataset
 import logging
 import random
-from utils.config import Config
-#from utils.visualization.plot_images_grid import plot_images_grid
+from src.config import Config
 import deepSVDD
 from base.base_net import BaseNet
-
-INPUT_DIM = 3714
 
 class Pairs_Dataset(TorchvisionDataset):
 
@@ -74,7 +69,7 @@ class PairsEncoder(BaseNet):
       return self.seq(x).squeeze()
 
 class PairsAutoEncoder(BaseNet):
-
+    
     def __init__(self):
         super().__init__()
         self.encoder = PairsEncoder()
@@ -88,10 +83,9 @@ class PairsAutoEncoder(BaseNet):
 
 def build_autoencoder(net_name):
     return PairsAutoEncoder()
-    #return nn.Sequential()~
 
 def build_network(net_name):
   
   return PairsEncoder()
-    #return nn.Sequential()
+
 

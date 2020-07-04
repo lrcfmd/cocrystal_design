@@ -2,25 +2,20 @@ import matplotlib.font_manager
 from matplotlib import rcParams
 import matplotlib.pyplot as plt
 
-rcParams["font.weight"] = "normal"
-rcParams["axes.labelweight"] = "normal"
-rcParams['font.family'] = 'sans-serif'
-rcParams["font.sans-serif"] = "Helvetica"
-rcParams["axes.labelsize"] = "xx-large"
-rcParams["axes.labelweight"] = "bold"
-rcParams["xtick.labelsize"] = "xx-large"
-rcParams["ytick.labelsize"] = "xx-large"
+def rc_params():
+    rcParams["font.weight"] = "normal"
+    rcParams["axes.labelweight"] = "normal"
+    rcParams['font.family'] = 'sans-serif'
+    rcParams["font.sans-serif"] = "Helvetica"
+    rcParams["axes.labelsize"] = "xx-large"
+    rcParams["axes.labelweight"] = "bold"
+    rcParams["xtick.labelsize"] = "xx-large"
+    rcParams["ytick.labelsize"] = "xx-large"
+    rcParams['axes.facecolor'] = 'white'
+    rcParams['axes.grid']=False
+    rcParams['patch.edgecolor'] = 'black'
 
-
-major_ticks_x = np.arange(0, 1.1, 0.5)
-minor_ticks_x = np.arange(0, 1.1, 0.25)
-major_ticks_y = np.arange(0, 1.1, 0.5)
-minor_ticks_y = np.arange(0, 1.1, 0.25)
-
-n_bins = 30
-
-
-def set_ticks(ax):
+def set_ticks(ax,major_ticks_x, minor_ticks_x, major_ticks_y , minor_ticks_y ):
     ax.tick_params(axis='both', which='both', direction="in", width=2)
     ax.tick_params(axis='both', which='major', direction="in",  length=14)
     ax.tick_params(axis='both', which='minor', length=8,
@@ -45,7 +40,7 @@ def set_spines(ax):
 
 def set_prop(ax):
     ax.axis(aspect='equal')
-    ax.set(adjustable='box')  # , aspect='equal')
+    ax.set(adjustable='box')
     ax.set_xlim(0, 1.05)
     ax.set_ylim(0, 1.14)
     ax.grid(False)
