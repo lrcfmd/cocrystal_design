@@ -15,6 +15,8 @@ def cross_val(clf, X_train):
       train_label = train_data[:,-1]
       test_data = np.array(X_train_val)[test]
       test_label = test_data[:, -1]
+      train_data = np.vstack([train_data, np.hstack([train_data[:,24:], train_data[:,:24]])])
+      train_label = np.concatenate([train_label, train_label])
       clf.fit(train_data[:, :-1],train_label )
       pred_train = clf.predict(train_data[:,:-1])
       pred_test = clf.predict(test_data[:,:-1])

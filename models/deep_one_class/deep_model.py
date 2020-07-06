@@ -5,12 +5,12 @@ from torch.utils.data import DataLoader, Dataset, Subset
 import torch.nn.functional as F
 from src.set_transformer.modules import SAB, PMA, ISAB
 import tqdm
-from base.torchvision_dataset import TorchvisionDataset
+from src.base.torchvision_dataset import TorchvisionDataset
 import logging
 import random
 from src.config import Config
 import deepSVDD
-from base.base_net import BaseNet
+from src.base.base_net import BaseNet
 
 class Pairs_Dataset(TorchvisionDataset):
 
@@ -69,7 +69,7 @@ class PairsEncoder(BaseNet):
       return self.seq(x).squeeze()
 
 class PairsAutoEncoder(BaseNet):
-    
+
     def __init__(self):
         super().__init__()
         self.encoder = PairsEncoder()
