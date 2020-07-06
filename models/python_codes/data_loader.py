@@ -78,8 +78,6 @@ def unlabelled_dataset():
   values = unlabeled.iloc[:, 1:].values
   d = {key:value for key, value in zip(keys, values)}
   mol1_data= list()
-
-  unlabeled, pairs = load_zinc_dataset()
   mol1_data= list()
   for mol1 in pairs[0]:       
       mol1_data.append(d[mol1])
@@ -106,7 +104,7 @@ def unlabelled_dataset():
   comb=[]
   for i in range(1,final_1.shape[0]+1):
     comb.append('comb%s' % i)
-  uf_final=pd.concat([pd.DataFrame(comb, columns=['comb']),final_1, final_2 ], axis=1)
+  uf_final=pd.concat([pd.DataFrame(comb, columns=['comb']),final_1_scaled, final_2_scaled], axis=1)
   return uf_final
 
 
