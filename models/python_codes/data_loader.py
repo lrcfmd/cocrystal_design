@@ -63,7 +63,7 @@ def unlabelled_dataset():
   '''
   Load the descriptors for ZINC15 dataset
   '''
-  unlabeled = pd.read_csv('../data/unlabelled_dragon_git.csv')
+  unlabeled = pd.read_csv('../data/unlabelled_dragon.csv')
   val = unlabeled['NAME'].values
   length = len(val)
   unlabeled=unlabeled.loc[:, (unlabeled != 0).any(axis=0)]
