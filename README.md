@@ -11,7 +11,7 @@ b. Designing the labeled (CSD) and unlabeled (ZINC15) dataset
 2. Standard one class/novelty detection:\
 -Involves feature engineering following the paper (Fábián, L. Cambridge Structural Database Analysis of Molecular 
 Complementarity in Cocrystals. Cryst. Growth Des. 2009, 9 (3), 1436–1443)\
--2a part involves the hyperparameter tunning process using the hyperopt library (https://github.com/hyperopt/hyperopt)\
+-2a part involves the hyperparameter tunning process using the hyperopt library (https://github.com/hyperopt/hyperopt) \
 -The models were adapted and modified from https://github.com/yzhao062/pyod.git and https://scikit-learn.org/stable/modules/mixture.html
 
 3. Deep one class\
