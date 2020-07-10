@@ -1,3 +1,5 @@
+![alt text](https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png)
+
 Supporting code reproducing all the results for the paper: 
 'One class classification as a practical approach for accelerating target specific co-crystal discovery'
 
