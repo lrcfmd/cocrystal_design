@@ -3,14 +3,14 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset, Subset
 import torch.nn.functional as F
-from src.set_transformer.modules import SAB, PMA, ISAB
+from set_transformer.modules import SAB, PMA, ISAB
 import tqdm
-from src.base.torchvision_dataset import TorchvisionDataset
+from base.torchvision_dataset import TorchvisionDataset
 import logging
 import random
-from src.config import Config
+from config import Config
 import deepSVDD
-from src.base.base_net import BaseNet
+from base.base_net import BaseNet
 
 class Pairs_Dataset(TorchvisionDataset):
 
