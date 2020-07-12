@@ -57,18 +57,16 @@ def search_cocrystals():
             smi = smi.split('.')
             if len(Remove(smi)) == 2:
             # We make sure that the structure consist of two different molecules
-                fin.append(mol.identifier)
-              
-    final_cocrystals =[]
-    
+                fin.append(mol.identifier)              
+    final_cocrystals =[]    
     # clean the list from solvents
     for mol1 in fin:
         mol = csd_reader.molecule(mol1)
         for i in range(0, (len(mol.components))):
-            if mol.components[i].smiles not in solvents:
-                final_cocrystals.append(mol.identifier)
+            if mol.components[i].smiles in solvents:
+                final_cocrystals.append(mol.identifier)    
     final_cocrystals = Remove(final_cocrystals)
-    
+    final_cocrystals = [x for x in fin if x not in final_cocrystals]    
     # Clean the list from polymorphs
     cocrystals = remove_polymorphs(final_cocrystals)
     return cocrystals

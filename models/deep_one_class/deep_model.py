@@ -84,8 +84,11 @@ class PairsAutoEncoder(BaseNet):
 def build_autoencoder(net_name):
     return PairsAutoEncoder()
 
-def build_network(net_name):
-  
+def build_network(net_name):  
   return PairsEncoder()
 
+def set_seed(seed):
+  random.seed(seed)
+  np.random.seed(seed)
+  torch.manual_seed(seed)
 
