@@ -42,12 +42,11 @@ def search_cocrystals():
     settings.no_ions = True
     settings.no_metals = True
     mol = []
+    fin=[]
     for i, entry in enumerate(csd):
         if settings.test(entry):
             molecule = entry.identifier
-            mol.append(molecule)
-
-    fin=[]
+            mol.append(molecule)    
     csd_reader = MoleculeReader(mol)
     for i in csd_reader:
         id= i.identifier
@@ -63,7 +62,7 @@ def search_cocrystals():
     for mol1 in fin:
         mol = csd_reader.molecule(mol1)
         for i in range(0, (len(mol.components))):
-            if mol.components[i].smiles in solvents:
+            if mol.components[i].smiles in solvents():
                 final_cocrystals.append(mol.identifier)    
     final_cocrystals = Remove(final_cocrystals)
     final_cocrystals = [x for x in fin if x not in final_cocrystals]    
