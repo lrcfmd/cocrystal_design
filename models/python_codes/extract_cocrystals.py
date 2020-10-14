@@ -27,6 +27,9 @@ def solvents():
     solvents = [x for x in lista if x not in organic_solvents]
     return solvents
 
+def Remove(duplicate):
+    return list(set(duplicate))
+
 def search_cocrystals():
     '''
     Search the whole CSD for structures that contain two different molecules
