@@ -33,6 +33,7 @@ Complementarity in Cocrystals. Cryst. Growth Des. 2009, 9 (3), 1436–1443)\
 
 **Citing**
 This work is described in detail in the following publication:
+¬¬¬
 
 @article{10.1039/d0sc04263c,
     author = {Vriza, Aikaterini and Canaj, Angelos B. and Vismara, Rebecca and Kershaw Cook, Laurence J.and Manning, Troy D. and
@@ -48,3 +49,5 @@ This work is described in detail in the following publication:
         https://doi.org/10.1039/D0SC04263C
     }
 }
+
+¬¬¬
