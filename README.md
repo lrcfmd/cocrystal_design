@@ -26,7 +26,7 @@ Complementarity in Cocrystals. Cryst. Growth Des. 2009, 9 (3), 1436–1443)\
 
 5. Ratios prediction
 
-6. SHAP explanations for detecting the significant features
+6. SHAP explanations for detecting the significant features (https://github.com/slundberg/shap)
 
 7. Experimental realization (Pareto Optimization)
 
@@ -47,9 +47,7 @@ This work is described in detail in the following publication:
     pages = {1702-1719},
     year = {2021},
     doi = {10.1039/d0sc04263c},
-    URL = { 
-        https://doi.org/10.1039/D0SC04263C
+    URL = {https://doi.org/10.1039/D0SC04263C}
     }
-}
 
 ```
