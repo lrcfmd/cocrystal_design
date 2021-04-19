@@ -31,7 +31,7 @@ Complementarity in Cocrystals. Cryst. Growth Des. 2009, 9 (3), 1436–1443)\
 8. Comparison with known co-crystals in CSD (Euclidean distance and Packing considerations)
 
 
-**Citing**
+# Citing
 This work is described in detail in the following publication:
 ```
 
