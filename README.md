@@ -30,3 +30,21 @@ Complementarity in Cocrystals. Cryst. Growth Des. 2009, 9 (3), 1436–1443)\
 
 8. Comparison with known co-crystals in CSD (Euclidean distance and Packing considerations)
 
+
+**Citing**
+This work is described in detail in the following publication:
+
+@article{10.1039/d0sc04263c,
+    author = {Vriza, Aikaterini and Canaj, Angelos B. and Vismara, Rebecca and Kershaw Cook, Laurence J.and Manning, Troy D. and
+              Gaultois, Michael W. and Wood, Peter A. and Kurlin, Vitaliy and Berry, Neil and Dyer, Matthew S. and Rosseinsky, Matthew J.},
+    title = {One class classification as a practical approach for accelerating π–π co-crystal discovery},
+    journal = {Chemical Science},
+    volume = {12},
+    number = {5},
+    pages = {1702-1719},
+    year = {2021},
+    doi = {10.1039/d0sc04263c},
+    URL = { 
+        https://doi.org/10.1039/D0SC04263C
+    }
+}
