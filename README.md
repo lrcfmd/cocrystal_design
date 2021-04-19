@@ -3,7 +3,7 @@ The aim of this work is to introduce the concept of One Class Classification and
 
 
 
-<img src="https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png" width="500" height="400">
+<img src="https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png" width="800" height="400">
 
 The computational workflow for the co-crystal design involves the following steps:
 
