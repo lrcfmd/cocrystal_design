@@ -2,7 +2,7 @@
 The aim of this work is to introduce the concept of One Class Classification and its application in a co-crystal design problem as described in  in our paper [One class classification as a practical approach for accelerating π–π co-crystal discovery](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc04263c#!divAbstract).
 
 
-<img src="https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png" width="200">
+![](https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png =250x250)
 
 The computational workflow for the co-crystal design involves the following steps:
 
