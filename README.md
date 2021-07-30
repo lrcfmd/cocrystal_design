@@ -1,5 +1,5 @@
 # Co-crystal prediction
-<img src="https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png" width="800" height="400">
+![TOC](https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png)
 We introduce the concept of One Class Classification and its application to discovering new co-crystals, as described in our paper [One class classification as a practical approach for accelerating π–π co-crystal discovery](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc04263c#!divAbstract). 
 When trying to predict whether a new material exists, data driven approaches struggle owing to strongly imbalanced and biased datasets, owing to the lack of negative examples (i.e., data for experiments that didn’t work or materials that cannot be formed). To overcome this shortcoming, one class classification focuses instead on describing the existing data, and determining whether a prediction is similar to or different from the known data. We show this is a useful method to discover new materials. 
 
