@@ -1,10 +1,9 @@
 # Co-crystal prediction
-The aim of this work is to introduce the concept of One Class Classification and its application in a co-crystal design problem as described in our paper [One class classification as a practical approach for accelerating π–π co-crystal discovery](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc04263c#!divAbstract). 
-A very important consern that currrent data driven approaches for materials discovery face is the lack of negative data i.e., data for experiments that didn’t work or materials that cannot be formed. This  drives to the excistence of extremely biased towards one class materials datasets. Instead of trying to gather large amounts of negative data for binary classification, that might be an expensive or unreliable process, one class classification is focusing on extracting the trends that dominate the known and reliable data and try to predict similar materials that could be synthesizable. 
-
 <img src="https://github.com/lrcfmd/cocrystal_design/blob/master/figures/main_fig.png" width="800" height="400">
+We introduce the concept of One Class Classification and its application to discovering new co-crystals, as described in our paper [One class classification as a practical approach for accelerating π–π co-crystal discovery](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc04263c#!divAbstract). 
+When trying to predict whether a new material exists, data driven approaches struggle owing to strongly imbalanced and biased datasets, owing to the lack of negative examples (i.e., data for experiments that didn’t work or materials that cannot be formed). To overcome this shortcoming, one class classification focuses instead on describing the existing data, and determining whether a prediction is similar to or different from the known data. We show this is a useful method to discover new materials. 
 
-The computational workflow for the co-crystal design involves the following steps:
+The computational workflow we demonstrate for co-crystal design involves the following steps:
 
 1. Generating the datasets:\
 a. Co_crystals extraction from Cambridge Crystalographic Structural Database (CSD)
@@ -33,7 +32,7 @@ Complementarity in Cocrystals. Cryst. Growth Des. 2009, 9 (3), 1436–1443)\
 
 
 # Citing
-This work is described in detail in the following publication:
+If you would like to use this work or code in your research, please use the following reference:
 ```
 
 @article{10.1039/d0sc04263c,
